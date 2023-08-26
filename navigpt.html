@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../styles/styles1.css">
+
+  <style>
+    .warning {
+      color: red;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="signup-box">
+      <div>
+        <img src="../images/amazon.jpg" width="200px" height="80px">
+      </div>
+      <h1>Create Account</h1>
+      <form name="frm" id="frms">
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <span class="warning" id="name-warning"> Please enter your name</span>
+        <input type="tel" placeholder="Mobile Number" required id="num">
+        <input type="email" placeholder="Email" id="mail" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit" id="navigate-button">Create Account</button>
+      </form>
+      <p>Already have an account? <a href="../html/signin.html">Sign In</a></p>
+      <p>By creating an account or logging in, you agree to Amazon’s Conditions of Use and Privacy Policy.</p>
+    </div>
+  </div>
+
+  <footer class="signfooter">
+    <div>
+      <ul style="float: left;">
+        <li>Conditions of use</li>
+        <li>Privacy notice</li>
+        <li>Help</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    window.onclick = function () {
+      const form = document.getElementById('frms');
+      const inputs = form.querySelectorAll('input');
+
+      inputs.forEach(input => {
+        const warning = document.createElement('span');
+        warning.className = 'warning';
+        warning.style.display = 'none';
+        warning.textContent = 'This field is required.';
+        
+        // Insert the warning after the input field
+        input.parentNode.insertBefore(warning, input.nextSibling);
+
+        input.addEventListener('input', function () {
+          if (input.value.trim() === '') {
+            warning.style.display = 'block';
+          } else {
+            warning.style.display = 'none';
+          }
+        });
+      });
+    };
+  </script>
+</body>
+
+</html>
