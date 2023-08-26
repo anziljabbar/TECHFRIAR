@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>amazon</title>
+
   <style>
     ul {
       list-style-type: none;
@@ -12,6 +13,9 @@
       overflow: hidden;
       background-color: #010000;
     }
+
+
+
     li a {
       display: block;
       color: white;
@@ -20,6 +24,11 @@
       text-decoration: none;
       font-size: xx-large;
     }
+
+    
+
+
+
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -29,7 +38,8 @@
       gap: 50px;
       margin-top: 60px;
     }
-.product {
+
+    .product {
       background-color: #fff;
       border: 1px solid #ddd;
       padding: 20px;
@@ -45,6 +55,7 @@
       font-weight: bold;
     }
 
+
     @media screen and (max-width: 768px) {
       .container {
         grid-template-columns: repeat(2, 1fr);
@@ -55,10 +66,13 @@
         padding: 10px;
       }
 
+
       #amazon-footer{
         display: none;
       }
 
+
+      /* Adjust other styles as needed for smaller screens */
     }
 
     @media screen and (max-width: 680px) {
@@ -81,33 +95,53 @@
 .cart{
   width: 50px;height: 30px;
 }
+
 .ul1 li{
   list-style: none;margin:auto;background-color: #232f3e;font-size: small;float: left;
-}  
+}
+
+
+
+
+      
     }
 
+
+
     @media screen and (max-width: 680px) {
-  
+  /* Adjust the footer layout for smaller screens */
   .amazon-footer {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+   
   }
+
   .ul1 {
    margin-left: 0px !important;
+    
+    
   }
 
   .ul1 h4 {
     font-size: 18px;
   }
+
   .ul1 ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
+
   .ul1 li {
+   
     font-size: 14px;padding-left: 30px;
   }
 }
+
+
+
+
+
     input[type=text] {
       
       box-sizing: border-box;
@@ -122,6 +156,8 @@
       margin-top: 30px;
       margin-left: 20px;
     }
+
+
     .amazon-footer {
       background-color: #232f3e;
      
@@ -131,6 +167,8 @@
       min-height: 200px;
     
     }
+
+
     .ul1 li {
       list-style-type: none;
       margin: auto;
@@ -139,12 +177,18 @@
       padding-left: 50px;
       padding-bottom: 20px; 
     }
+
     .ul1 {
       float: left;
       margin-left: 140px;
     }
   </style>
 </head>
+
+<body>
+
+
+
   <body>
 
     <ul class="ul2">
@@ -161,6 +205,7 @@
       <li style="float: left;"><a class="active" href="../html/about.html">About</a></li>
     </ul>
     <div>
+
       <input type="text" name="search-bar" placeholder="Search Amazon">
     </div>
     <div class="container">
@@ -193,13 +238,17 @@
       <ul class="ul1" style="background-color: #232f3e;">
         <li>
           <h4>Get to Know Us</h4>
+      
         <li>Careers</li>
         <li>Press Release</li>
         <li>Amazon Science</li>
       </ul>
+
+
       <ul class="ul1" style="background-color: #232f3e;">
         <li>
           <h4>Connect With Us</h4>
+      
         <li>Facebook</li>
         <li>Twitter</li>
         <li>Instagram</li>
@@ -207,10 +256,13 @@
       <ul class="ul1" style="background-color: #232f3e;">
         <li>
           <h4>Make Money With Us</h4>
+        
         <li>Sell on amazon</li>
         <li>Amazon Pay on Merchants</li>
         <li>Advertise Your Products</li>
       </ul>
+
     </footer>
   </body>
+
 </html>

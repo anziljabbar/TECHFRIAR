@@ -1,7 +1,4 @@
-
-
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
       <meta charset="UTF-8">
@@ -63,11 +60,7 @@
       form button:hover {
         background-color: #ff8c00;
       }
-
-      
       </style>
-
-
 
 <script lang="javascript">
 
@@ -107,16 +100,11 @@ function validate(){
         return false;
     }
 
-
-
     if (document.getElementById("state").value.length==0){
         alert('Please enter state.');
         document.getElementById("state").focus();
         return false;
     }
-
-
-
 }
 </script>
     </head>
@@ -125,17 +113,13 @@ function validate(){
         <div class="address-form">
           <h1>Add Address</h1>
           <form name="frm">
-
             <label for="country">Country/Region</label>
             <select  style="width: 300px;height: 30px;"  name="country" id="country">
-
-
                 <option value="india">India</option>
                 <option value="indonesia">Indonesia</option>
                 <option value="uae">UAE</option>
                 <option value="iceland">Iceland</option>
             </select>
-
             <label for="name">Full Name</label>
             <input type="text" id="name" name="name" required>
 
@@ -145,33 +129,24 @@ function validate(){
             <label for="zipcode">Pin Code</label>
             <input type="text" id="zipcode" name="zipcode" placeholder="6 digits [0-9] pin code" required>
             
-            <label for="address">Flat, House no., Building, Company, Apartment
-            </label>
+            <label for="address">Flat, House no., Building, Company, Apartment</label>
             <input type="text" id="address" name="address" rows="4" required></textarea>
             
             <label for="area">Area, Street, Sector, Village</label>
             <input type="text" id="area" name="area" required>
             
-           
             <label for="landmark">Land Mark</label>
             <input type="text" id="landmark" name="landmark" required>
-
 
  <label for="city">Town/City</label>
             <input type="text" id="city" name="city" required>
 
-
             <label for="state">State</label>
             <input type="text" id="state" name="state" required>
 
-            
             <button type="submit" onclick="validate()">Add Address</button>
           </form>
         </div>
       </div>
     </body>
     </html>
-    
-
-
- 

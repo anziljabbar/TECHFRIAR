@@ -75,13 +75,10 @@ body {
   a:hover {
     text-decoration: underline;
   }
-  
   .signfooter{
       background-color: #232f3e;
 
   }
-
-
   li{
     float: left;list-style-type: none; margin-left: 50px;
   

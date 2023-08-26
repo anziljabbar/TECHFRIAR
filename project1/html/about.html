@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>about</title>
+
     <style>
         .amazon-footer {
             background-color: #232f3e;
@@ -13,7 +15,6 @@
             flex-shrink: 0;
             height: 300px;
         }
-
 
         li a {
             display: block;
@@ -39,39 +40,67 @@
     font-size: larger;
 }
 
+@media screen and (max-width: 768px) {
+  .amazon-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0; 
+    height: auto;
+  }
+  .amazon-footer img {
+    margin-left: 20px;
+    margin-top: 10px; 
+    width: 150px; 
+    height: auto; 
+  }
+  .amazon-footer p {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .ul1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  .ul1 li {
+    margin-right: 20px;
+  }
+  .ul1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust the font size for smaller screens */
+  pre {
+    font-size: 14px; /* Adjust as needed */
+    overflow-x: auto; /* Add horizontal scrolling for small screens */
+  }
+}
     </style>
 </head>
-
-
 <body>
-
-
-
     <section style="background-color: #232f3e;">
-
         <div>
             <pre style="color: white;font-size: x-large;overflow: auto;"> 
-        
-        
                                        We hold ourselves and each other accountable for demonstrating the Leadership Principles 
                                        throughour actions every day. Our Leadership Principles describe how Amazon does 
   <b>Leadership Principles<b>                business, how leaderslead, and how we keep the customer at the center of our decisions.
                                        Our unique Amazon culture,described by our Leadership Principles, helps us relentlessly
                                        pursue our mission of being Earth’smost customer-centric company, best employer, and 
                                        safest place to work.
-            
-            
                             </pre>
         </div>
     </section>
-
-
     <section>
         <div style="user-select: none;">
-
             <pre>
-
-              
                 <b>Amazon India News
                 Sign up for the latest news, facts, analysis, and original stories about Amazon India delivered to you.</b>
                 
@@ -80,43 +109,23 @@
                 border-bottom: 2px solid orange;width: 400px;height: 60px;">
                 
 
-
                 Protected by reCAPTCHA. The Google Privacy Policy and Terms of Service apply.
                 Privacy Policy | Opt out anytime
             </pre>
         </div>
     </section>
-
-
-
     <footer class="amazon-footer">
-
         <div>
-            <img src="../images/amazon.jpg" width="200px" height="80px" style="margin-left: 20px;margin-top: 30px;">
+            <img src="../images/amazon.jpg"   alt="amazon logo" width="200px" height="80px" style="margin-left: 20px;margin-top: 30px;">
         </div>
-
-
         <p style="margin-top: 40px;margin-left: 20px;" > Social Media</p>
-
-
         <ul>
-
-
             <li style="float: left;"><a href="https://www.facebook.com/AmazonIN/">Facebook</a></li>
             <li style="float: left;"><a href="https://www.instagram.com/amazondotin/">Instagram</a></li>
             <li style="float: left;"><a class="active" href="https://twitter.com/amazonin?lang=en">Twitter</a></li>
         </ul>
-
-
-
-       
-        
         </div>
-
-      
-
         <p style="margin-left: 20px;margin-top: 40px;">Amazon.in | Conditions of Use | © 1996-2023 Amazon.com, Inc. or its affiliates</p>
     </footer>
 </body>
-
 </html>
