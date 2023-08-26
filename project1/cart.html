@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #232f3e;
+            color: #ffffff;
+            padding: 10px;
+            
+        }
+        .cart-item {
+            border: 1px solid #dddddd;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .cart-item img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        .cart-item-details {
+            flex: 1;
+        }
+        .cart-total {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .checkout-button {
+            background-color: #f0c14b;
+            color: #111111;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Cart</h2>
+    </header>
+    <div class="cart-item">
+        <img src="product3.jpg" alt="Item 1">
+        <div class="cart-item-details">
+            <h2>OnePlus Nord CE 2 Lite 5G</h2>
+            <p>Price: ₹18,999 </p>
+            <p>Quantity: 1</p>
+            <button class="remove-button">Remove</button>
+        </div>
+    </div>
+    <div class="cart-item">
+        <img src="product7.jpg" alt="Item 2">
+        <div class="cart-item-details">
+            <h2>JBL C50HI, Wired in Ear Headphones</h2>
+            <p>Price:  ₹498.00</p>
+            <p>Quantity: 1</p>
+            <button class="remove-button">Remove</button>
+        </div>
+    </div>
+    <div class="cart-total">
+        <h2>Total: ₹19,497</h2>
+        <button class="checkout-button">Proceed to Checkout</button>
+    </div>
+</body>
+</html>
