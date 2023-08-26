@@ -56,10 +56,65 @@
     }
 
 
+    @media screen and (max-width: 768px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .product {
+        padding: 10px;
+      }
+
+
+      #amazon-footer{
+        display: none;
+      }
+
+
+      /* Adjust other styles as needed for smaller screens */
+    }
+
+    @media screen and (max-width: 680px) {
+      .container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      li a{
+        font-size: small;float: left; margin-top: 10px;
+            
+      }
+
+      .amlogo{
+        width: 50px;height: 50px;margin-top: 20px;
+      }
+      #amazon-footer{
+        display: none;
+      }
+.cart{
+  width: 50px;height: 30px;
+}
+
+.ul1 li{
+  list-style: none;margin:auto;background-color: #232f3e;font-size: small;float: left;
+}
+
+.ul1 {
+  margin-left: 10px;float: left;height: 400px;font-size: small;
+}
+
+.amazon-footer{
+  width: 400px;
+}
+      
+    }
+
+
 
 
     input[type=text] {
-      width: 35%;
+      
       box-sizing: border-box;
       border: 2px solid #ccc;
       border-radius: 4px;
@@ -70,7 +125,7 @@
       background-repeat: no-repeat;
       padding: 12px 20px 12px 40px;
       margin-top: 30px;
-      margin-left: 500px;
+      margin-left: 20px;
     }
 
 
@@ -80,7 +135,7 @@
       color: #fff;
       padding: 2rem 0;
       flex-shrink: 0;
-      min-height: 200px;min-width: 500px;
+      height: 200px;
     
     }
 
@@ -91,7 +146,7 @@
       line-break: normal;
       float: none;
       padding-left: 50px;
-      padding-bottom: 20px;
+      padding-bottom: 20px; 
     }
 
     .ul1 {
@@ -109,16 +164,16 @@
 
     <ul class="ul2">
       <li style="float: right;">
-        <img src="amazon.jpg" alt="amazon logo" width="200px" height="100px">
+        <img src="../images/amazon.jpg"  class="amlogo" alt="amazon logo" width="200px" height="100px">
       </li>
 
       <li style="float: right;">
-         <a href="cart.html"> <img src="cart.jpg" alt="cart" width="150px" height="60px"></a>
+         <a href="cart.html"> <img src="../images/cart.jpg" alt="cart"  class="cart" width="150px" height="60px"></a>
       </li>
       
-      <li style="float: left;"><a href="signup.html">Sign Up</a></li>
-      <li style="float: left;"><a href="signin.html">Sign In</a></li>
-      <li style="float: left;"><a class="active" href="about.html">About</a></li>
+      <li style="float: left;"><a href="../html/signup.html">Sign Up</a></li>
+      <li style="float: left;"><a href="../html/signin.html">Sign In</a></li>
+      <li style="float: left;"><a class="active" href="../html/about.html">About</a></li>
     </ul>
     <div>
 
@@ -126,27 +181,27 @@
     </div>
     <div class="container">
       <div class="product">
-        <img src="product1.jpg" alt="Product 1">
+        <img src="../images/product1.jpg" alt="Product 1">
         <div class="product-name">iQOO Neo 7 Pro 5G<br>₹34,999</div>
       </div>
       <div class="product">
-        <img src="product2.jpg" alt="Product 2">
+        <img src="../images/product2.jpg" alt="Product 2">
         <div class="product-name">TECNO Pova 5 Pro 5G<br>₹15,999</div>
       </div>
       <div class="product" style="padding-top: 80px;">
-        <img src="product3.jpg" alt="Product 3">
+        <img src="../images/product3.jpg" alt="Product 3">
         <div class="product-name">OnePlus Nord CE 2 Lite 5G<br>₹18,999</div>
       </div>
       <div class="product">
-        <img src="product4.jpg" alt="Product 4">
+        <img src="../images/product4.jpg" alt="Product 4">
         <div class="product-name">realme narzo 60 5G <br>₹21,999</div>
       </div>
       <div class="product">
-        <img src="product5.jpg" alt="Product 5">
+        <img src="../images/product5.jpg" alt="Product 5">
         <div class="product-name">TECNO Pova 5 Pro 5G<br>₹19,999</div>
       </div>
       <div class="product">
-        <img src="product6.jpg" alt="Product 6">
+        <img src="../images/product6.jpg" alt="Product 6">
         <div class="product-name">Lava Blaze 2<br>₹14,999</div>
       </div>
     </div>
@@ -154,7 +209,7 @@
       <ul class="ul1" style="background-color: #232f3e;">
         <li>
           <h4>Get to Know Us</h4>
-        </li>
+      
         <li>Careers</li>
         <li>Press Release</li>
         <li>Amazon Science</li>
@@ -164,7 +219,7 @@
       <ul class="ul1" style="background-color: #232f3e;">
         <li>
           <h4>Connect With Us</h4>
-        </li>
+      
         <li>Facebook</li>
         <li>Twitter</li>
         <li>Instagram</li>
@@ -172,7 +227,7 @@
       <ul class="ul1" style="background-color: #232f3e;">
         <li>
           <h4>Make Money With Us</h4>
-        </li>
+        
         <li>Sell on amazon</li>
         <li>Amazon Pay on Merchants</li>
         <li>Advertise Your Products</li>
